@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Added config file",
+  "packageName": "dummy-napi",
+  "email": "edgar21_9@hotmail.com",
+  "dependentChangeType": "patch"
+}
