@@ -10,7 +10,8 @@
   "license": "MIT",
   "devDependencies": {
     "@napi-rs/cli": "^2.12.0",
-    "ava": "^4.3.3"
+    "ava": "^4.3.3",
+    "beachball": "^2.31.11"
   },
   "ava": {
     "timeout": "3m"
@@ -19,6 +20,9 @@
     "node": ">= 10"
   },
   "scripts": {
+    "change": "beachball change -c .beachball.js",
+    "check-changefile": "beachball check -c .beachball.js",
+    "beachball-publish": "beachball publish -c .beachball.js -y",
     "artifacts": "napi artifacts",
     "build": "napi build --platform --release",
     "build:debug": "napi build --platform",
