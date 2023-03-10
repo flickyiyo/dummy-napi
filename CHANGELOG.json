@@ -1,0 +1,20 @@
+{
+  "name": "dummy-napi",
+  "entries": [
+    {
+      "date": "Fri, 10 Mar 2023 17:35:28 GMT",
+      "tag": "dummy-napi_v0.0.1",
+      "version": "0.0.1",
+      "comments": {
+        "patch": [
+          {
+            "author": "edgar21_9@hotmail.com",
+            "package": "dummy-napi",
+            "commit": "b615d70e652c3d4b30de827172c08fe8e45f58f1",
+            "comment": "Added config file"
+          }
+        ]
+      }
+    }
+  ]
+}
