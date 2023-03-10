@@ -1,0 +1,30 @@
+name: publish
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: install deps
+        run: yarn install
+      - name: check changefiles
+        run: yarn check-changefile
+      - name: build
+        run: yarn build
+      - name: prep
+        run: |
+          mkdir artifacts
+          cp *.node artifacts
+          yarn artifacts
+      - name: publish
+        run: |
+          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+          yarn beachball publish -c .beachball.js -y --token $NPM_TOKEN
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          
