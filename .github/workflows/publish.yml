@@ -23,6 +23,8 @@ jobs:
           yarn artifacts
       - name: publish
         run: |
+          git config --global user.email "edgar21_9@hotmail.com"
+          git config --global user.name "Edgar"
           echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
           # yarn prepublishOnly
           yarn beachball publish -c .beachball.js -y --token $NPM_TOKEN
