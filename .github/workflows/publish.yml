@@ -24,7 +24,7 @@ jobs:
       - name: publish
         run: |
           echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-          yarn prepublishOnly
+          # yarn prepublishOnly
           yarn beachball publish -c .beachball.js -y --token $NPM_TOKEN
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
