@@ -1,6 +1,6 @@
 {
   "name": "dummy-napi",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "main": "index.js",
   "types": "index.d.ts",
   "napi": {
@@ -26,7 +26,6 @@
     "artifacts": "napi artifacts",
     "build": "napi build --platform --release",
     "build:debug": "napi build --platform",
-    "prepublishOnly": "napi prepublish -t npm",
     "test": "ava",
     "version": "napi version"
   }
