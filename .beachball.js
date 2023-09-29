@@ -4,5 +4,6 @@
 module.exports = {
     branch: "master",
     access: "public",
+    scope: ['!npm/*']
   };
   
