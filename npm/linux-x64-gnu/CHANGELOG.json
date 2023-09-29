@@ -1,0 +1,20 @@
+{
+  "name": "dummy-napi-linux-x64-gnu",
+  "entries": [
+    {
+      "date": "Fri, 29 Sep 2023 02:53:42 GMT",
+      "tag": "dummy-napi-linux-x64-gnu_v0.5.4",
+      "version": "0.5.4",
+      "comments": {
+        "patch": [
+          {
+            "author": "edgarivanv@microsoft.com",
+            "package": "dummy-napi-linux-x64-gnu",
+            "commit": "aefec00def42f689a6506a7f7cb840f1a2f92c62",
+            "comment": "added"
+          }
+        ]
+      }
+    }
+  ]
+}
