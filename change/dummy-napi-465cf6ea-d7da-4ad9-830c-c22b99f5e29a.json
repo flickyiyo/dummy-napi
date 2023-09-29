@@ -1,7 +1,0 @@
-{
-  "type": "patch",
-  "comment": "ad",
-  "packageName": "dummy-napi",
-  "email": "edgarivanv@microsoft.com",
-  "dependentChangeType": "patch"
-}
