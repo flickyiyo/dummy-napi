@@ -1,0 +1,21 @@
+{
+  "name": "dummy-napi-win32-x64-msvc",
+  "version": "0.0.1",
+  "os": [
+    "linux"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "main": "dummy-napi.win32-x64-msvc.node",
+  "files": [
+    "dummy-napi.win32-x64-msvc.node"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  },
+  "libc": [
+    "glibc"
+  ]
+}

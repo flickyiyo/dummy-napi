@@ -5,14 +5,32 @@ on:
       - master
   workflow_dispatch:
 jobs:
+  tests-win:
+    runs-on: windows-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+      - name: napi build
+        run: yarn install && yarn build
+      - name: upload artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: windows-napi
+          path: ./*.node
+          if-no-files-found: error
   build:
     runs-on: ubuntu-latest
     steps:
+      
       - name: checkout
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
           token: ${{ secrets.PAT }}
+      - name: pull artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: windows-napi
       - name: install deps
         run: yarn install
       - name: check changefiles
@@ -32,4 +50,4 @@ jobs:
           # yarn prepublishOnly
           yarn beachball publish -c .beachball.js -y --token $NPM_TOKEN
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}      
