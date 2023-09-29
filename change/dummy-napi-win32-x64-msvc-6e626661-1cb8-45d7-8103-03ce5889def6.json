@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "added",
+  "packageName": "dummy-napi-win32-x64-msvc",
+  "email": "edgarivanv@microsoft.com",
+  "dependentChangeType": "patch"
+}

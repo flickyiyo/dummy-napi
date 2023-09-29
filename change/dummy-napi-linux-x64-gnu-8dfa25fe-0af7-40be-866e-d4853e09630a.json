@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "added",
+  "packageName": "dummy-napi-linux-x64-gnu",
+  "email": "edgarivanv@microsoft.com",
+  "dependentChangeType": "patch"
+}
