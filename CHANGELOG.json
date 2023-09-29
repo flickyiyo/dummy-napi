@@ -2,6 +2,21 @@
   "name": "dummy-napi",
   "entries": [
     {
+      "date": "Fri, 29 Sep 2023 03:20:57 GMT",
+      "tag": "dummy-napi_v0.5.6",
+      "version": "0.5.6",
+      "comments": {
+        "patch": [
+          {
+            "author": "edgarivanv@microsoft.com",
+            "package": "dummy-napi",
+            "commit": "4d93a95ee3f34d4258d785043642871584022e53",
+            "comment": "pasd"
+          }
+        ]
+      }
+    },
+    {
       "date": "Fri, 29 Sep 2023 02:59:51 GMT",
       "tag": "dummy-napi_v0.5.5",
       "version": "0.5.5",

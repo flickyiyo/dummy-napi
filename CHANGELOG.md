@@ -1,8 +1,16 @@
 # Change Log - dummy-napi
 
-This log was last generated on Fri, 29 Sep 2023 02:59:51 GMT and should not be manually modified.
+This log was last generated on Fri, 29 Sep 2023 03:20:57 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## 0.5.6
+
+Fri, 29 Sep 2023 03:20:57 GMT
+
+### Patches
+
+- pasd (edgarivanv@microsoft.com)
 
 ## 0.5.5
 
